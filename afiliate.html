@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afíliate a CANACO Chihuahua</title>
+    <meta name="description" content="Únete a CANACO Servytur Chihuahua. Planes desde $2,500/año. Networking, capacitaciones, asesoría gubernamental y más.">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+        *{margin:0;padding:0;box-sizing:border-box}
+        body{font-family:'Inter',sans-serif;background:linear-gradient(170deg,#0B1D36 0%,#132F52 50%,#0B1D36 100%);min-height:100vh;color:white;padding:40px 20px}
+        .container{max-width:720px;margin:0 auto}
+        a{color:#FFC107;text-decoration:none}
+        a:hover{text-decoration:underline}
+        .back{display:inline-flex;align-items:center;gap:6px;color:rgba(255,255,255,0.5);font-size:13px;font-weight:600;margin-bottom:30px}
+        .back:hover{color:#FFC107}
+
+        .header{text-align:center;margin-bottom:40px}
+        .header img{width:90px;height:90px;border-radius:18px;background:white;padding:7px;margin-bottom:16px;box-shadow:0 8px 25px rgba(0,0,0,0.3)}
+        .header h1{font-size:26px;font-weight:900;margin-bottom:4px}
+        .header .sub{color:#FFC107;font-size:13px;font-weight:700;letter-spacing:3px;text-transform:uppercase}
+
+        .card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:18px;padding:28px;margin-bottom:20px}
+        .card.highlight{border-color:rgba(255,193,7,0.2);background:rgba(255,193,7,0.04)}
+
+        .intro{font-size:16px;line-height:1.6;color:rgba(255,255,255,0.75);text-align:center;font-style:italic}
+
+        h2{font-size:22px;font-weight:800;margin-bottom:18px;color:white}
+        .section-label{color:rgba(255,255,255,0.3);font-size:11px;font-weight:700;letter-spacing:3px;text-transform:uppercase;text-align:center;margin:35px 0 16px}
+
+        .req{display:flex;align-items:center;gap:12px;padding:10px 0;color:rgba(255,255,255,0.7);font-size:15px;border-bottom:1px solid rgba(255,255,255,0.05)}
+        .req:last-child{border-bottom:none}
+        .req .icon{font-size:20px;width:30px;text-align:center}
+
+        /* Pricing cards */
+        .plans{display:grid;grid-template-columns:1fr;gap:16px;margin-top:10px}
+        @media(min-width:640px){.plans{grid-template-columns:1fr 1fr 1fr}}
+
+        .plan{background:rgba(255,255,255,0.04);border:1px solid rgba(255,255,255,0.08);border-radius:16px;padding:24px 20px;display:flex;flex-direction:column;transition:transform 0.2s}
+        .plan:hover{transform:translateY(-3px)}
+        .plan.recommended{border-color:rgba(255,193,7,0.4);background:rgba(255,193,7,0.06);position:relative}
+        .plan.recommended::before{content:'RECOMENDADO';position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:#FFC107;color:#0B1D36;font-size:10px;font-weight:900;padding:3px 14px;border-radius:20px;letter-spacing:1.5px}
+
+        .plan-badge{font-size:24px;margin-bottom:8px}
+        .plan-name{font-size:15px;font-weight:800;color:white;margin-bottom:2px}
+        .plan-price{font-size:28px;font-weight:900;color:#FFC107;margin-bottom:4px}
+        .plan-price span{font-size:13px;font-weight:600;color:rgba(255,255,255,0.4)}
+        .plan-desc{font-size:12px;color:rgba(255,255,255,0.45);margin-bottom:14px;line-height:1.4;font-style:italic}
+        .plan-features{list-style:none;flex:1}
+        .plan-features li{font-size:12px;color:rgba(255,255,255,0.6);padding:4px 0;display:flex;align-items:flex-start;gap:6px;line-height:1.4}
+        .plan-features li::before{content:'✓';color:#FFC107;font-weight:800;flex-shrink:0}
+
+        /* Payment */
+        .pay-table{width:100%;border-collapse:collapse;margin:12px 0}
+        .pay-table td{padding:10px 14px;border-bottom:1px solid rgba(255,255,255,0.06);font-size:14px}
+        .pay-table td:first-child{color:rgba(255,255,255,0.5);width:40%}
+        .pay-table td:last-child{color:white;font-weight:600}
+
+        .contact-item{display:flex;align-items:flex-start;gap:12px;padding:8px 0;color:rgba(255,255,255,0.7);font-size:15px;line-height:1.5}
+        .contact-item .icon{font-size:20px;width:28px;text-align:center;flex-shrink:0;margin-top:2px}
+        .contact-item strong{color:white}
+
+        .cta-btn{display:block;background:linear-gradient(135deg,#FFC107,#FFD54F);color:#0B1D36;padding:18px 40px;border-radius:60px;font-weight:900;font-size:18px;letter-spacing:1px;text-transform:uppercase;text-align:center;text-decoration:none;box-shadow:0 6px 25px rgba(255,193,7,0.3);margin:30px auto;max-width:420px}
+        .cta-btn:hover{text-decoration:none;transform:translateY(-2px)}
+
+        .footer{text-align:center;margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.06);color:rgba(255,255,255,0.25);font-size:12px;line-height:1.8}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="links.html" class="back">‹ Todos los links</a>
+
+        <div class="header">
+            <img src="logo.png" alt="CANACO">
+            <h1>Afíliate a CANACO Chihuahua</h1>
+            <p class="sub">CANACO Servytur · Fundada en 1887</p>
+        </div>
+
+        <div class="card highlight">
+            <p class="intro">Una de las cámaras de comercio más importantes del norte del país. Únete y lleva tu empresa al siguiente nivel con respaldo institucional, networking y beneficios exclusivos.</p>
+        </div>
+
+        <!-- Requisitos -->
+        <div class="section-label">Requisitos</div>
+        <div class="card">
+            <h2>📋 Requisitos para Afiliarse</h2>
+            <div class="req"><span class="icon">🗂️</span>Copia de Constancia de Situación Fiscal</div>
+            <div class="req"><span class="icon">📝</span>Solicitud de afiliación</div>
+            <div class="req"><span class="icon">🖼️</span>Logotipo de tu empresa</div>
+            <div class="req"><span class="icon">💳</span>Inversión anual (según el paquete elegido)</div>
+        </div>
+
+        <!-- Planes -->
+        <div class="section-label">Planes de membresía 2026</div>
+        <div class="plans">
+            <!-- Básico -->
+            <div class="plan">
+                <div class="plan-badge">🟢</div>
+                <div class="plan-name">Básico</div>
+                <div class="plan-price">$2,500 <span>/año</span></div>
+                <div class="plan-desc">Impulsa tu negocio con lo esencial</div>
+                <ul class="plan-features">
+                    <li>Constancia de afiliación</li>
+                    <li>1 trámite de visa láser</li>
+                    <li>1 trámite de pasaporte</li>
+                    <li>Tarifas preferenciales educativo y médico</li>
+                    <li>2 capacitaciones anuales</li>
+                    <li>1 sesión Centro de Formación</li>
+                    <li>Asesoría básica gubernamental</li>
+                    <li>2 credenciales Socio a Socio</li>
+                    <li>Publicidad en Jueves de Negocios</li>
+                    <li>Integración a sección especializada</li>
+                </ul>
+            </div>
+            <!-- Intermedio -->
+            <div class="plan recommended">
+                <div class="plan-badge">🔵</div>
+                <div class="plan-name">Intermedio</div>
+                <div class="plan-price">$3,500 <span>/año</span></div>
+                <div class="plan-desc">Consolida tu crecimiento con herramientas clave</div>
+                <ul class="plan-features">
+                    <li>Todo lo del plan Básico</li>
+                    <li>2 trámites de visa láser</li>
+                    <li>2 trámites de pasaporte</li>
+                    <li>Bolsa de trabajo (filtro básico)</li>
+                    <li>4 capacitaciones anuales</li>
+                    <li>Diagnóstico empresarial personalizado</li>
+                    <li>15 credenciales Socio a Socio</li>
+                    <li>Asesoría gubernamental completa</li>
+                    <li>Renta de salas con tarifa especial</li>
+                </ul>
+            </div>
+            <!-- Plata -->
+            <div class="plan">
+                <div class="plan-badge">🥈</div>
+                <div class="plan-name">Plata</div>
+                <div class="plan-price">$7,000 <span>/año</span></div>
+                <div class="plan-desc">Lleva tu empresa al siguiente nivel</div>
+                <ul class="plan-features">
+                    <li>Todo lo del plan Intermedio</li>
+                    <li>3 trámites de visa láser</li>
+                    <li>3 trámites de pasaporte</li>
+                    <li>Bolsa de trabajo (filtro medio)</li>
+                    <li>6 capacitaciones anuales</li>
+                    <li>20 credenciales Socio a Socio</li>
+                    <li>Convenio + difusión en redes</li>
+                    <li>Hasta 5 espacios en eventos</li>
+                    <li>Toastmaster Club CANACO</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Pago -->
+        <div class="section-label">Datos de pago</div>
+        <div class="card">
+            <h2>💳 Transferencia Bancaria</h2>
+            <p style="color:rgba(255,255,255,0.5);font-size:13px;margin-bottom:12px">Realiza tu pago y envía comprobante a <a href="mailto:callcenter@canacochihuahua.com.mx">callcenter@canacochihuahua.com.mx</a></p>
+            <table class="pay-table">
+                <tr><td>🏦 Banco</td><td>Banco del Bajío S.A.</td></tr>
+                <tr><td>👤 A nombre de</td><td>CANACO Servytur de Chihuahua</td></tr>
+                <tr><td>🔢 CLABE</td><td>030150900010862672</td></tr>
+                <tr><td>💳 Cuenta</td><td>0109440230202</td></tr>
+                <tr><td>🧾 RFC</td><td>CNC380308LI5</td></tr>
+                <tr><td>💰 Moneda</td><td>MXN</td></tr>
+            </table>
+        </div>
+
+        <!-- Contacto -->
+        <div class="section-label">Contacto</div>
+        <div class="card">
+            <h2>📍 CANACO Servytur Chihuahua</h2>
+            <div class="contact-item">
+                <span class="icon">🏢</span>
+                <span>C. Pedro Zuloaga #11200, Col. Labor de Terrazas, C.P. 31223, Chihuahua, Chih.</span>
+            </div>
+            <div class="contact-item">
+                <span class="icon">📞</span>
+                <span>(614) 439 12 50 · (614) 439 12 66</span>
+            </div>
+            <div class="contact-item">
+                <span class="icon">🌐</span>
+                <span><a href="http://www.canacochihuahua.com">www.canacochihuahua.com</a></span>
+            </div>
+            <div class="contact-item">
+                <span class="icon">✉️</span>
+                <span><a href="mailto:callcenter@canacochihuahua.com.mx">callcenter@canacochihuahua.com.mx</a></span>
+            </div>
+
+            <h3 style="color:#FFC107;font-size:15px;font-weight:700;margin-top:20px;margin-bottom:12px">👩‍💼 Contacto Directo — Afiliación</h3>
+            <div class="contact-item">
+                <span class="icon">👤</span>
+                <span><strong>Rosario Herrera Jurado</strong> — Ejecutiva de Afiliación</span>
+            </div>
+            <div class="contact-item">
+                <span class="icon">📲</span>
+                <span>WhatsApp: <a href="https://wa.me/526142554824">+52 614 255 4824</a></span>
+            </div>
+            <div class="contact-item">
+                <span class="icon">📞</span>
+                <span>Oficina: (614) 439 12 71</span>
+            </div>
+        </div>
+
+        <a href="https://wa.me/526142554824?text=Hola%2C%20me%20interesa%20afiliarme%20a%20CANACO%20Chihuahua" class="cta-btn">¿Listo? Contáctanos por WhatsApp</a>
+
+        <div class="footer">
+            CANACO Servytur Chihuahua · Fundada en 1887<br>
+            <a href="links.html">← Volver a todos los links</a>
+        </div>
+    </div>
+</body>
+</html>
