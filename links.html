@@ -1,20 +1,59 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CANACO Restauranteros Chihuahua — Links</title>
-    <meta name="description" content="Sección Especializada de Restaurantes — CANACO Servytur Chihuahua. Directorio, redes sociales, membresías y colaboraciones.">
-    <meta property="og:title" content="CANACO Restauranteros Chihuahua">
-    <meta property="og:description" content="La comunidad de restauranteros más activa de Chihuahua">
+    <title>CANACO Restauranteros Chihuahua — Directorio de Restaurantes, Redes y Membresía</title>
+    <meta name="description" content="Sección Especializada de Restaurantes de CANACO Servytur Chihuahua. Directorio interactivo de restaurantes, networking entre emprendedores del sector alimentos y bebidas, y comunidad restaurantera en Chihuahua.">
+    <meta name="keywords" content="restaurantes en chihuahua, canaco chihuahua, dónde comer en chihuahua, directorio restaurantes chihuahua, emprendimiento restaurantero, comida chihuahua, sección restauranteros, canaco servytur, restaurantes canaco, gastronomía chihuahua, negocios de comida chihuahua">
+    <link rel="canonical" href="https://canacorestauranteroscuu.github.io/links.html">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://canacorestauranteroscuu.github.io/links.html">
+    <meta property="og:title" content="CANACO Restauranteros Chihuahua — Comunidad de Restaurantes">
+    <meta property="og:description" content="Directorio interactivo de restaurantes, networking y membresía para emprendedores del sector alimentos y bebidas en Chihuahua.">
+    <meta property="og:image" content="https://canacorestauranteroscuu.github.io/logo.png">
+    <meta property="og:site_name" content="CANACO Restauranteros Chihuahua">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="CANACO Restauranteros Chihuahua">
+    <meta name="twitter:description" content="Directorio de restaurantes, networking y comunidad restaurantera en Chihuahua.">
+    <meta name="twitter:image" content="https://canacorestauranteroscuu.github.io/logo.png">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Sección Especializada de Restaurantes — CANACO Servytur Chihuahua">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "CANACO Restauranteros Chihuahua",
+        "alternateName": "Sección Especializada de Restaurantes CANACO Servytur Chihuahua",
+        "url": "https://canacorestauranteroscuu.github.io",        "logo": "https://canacorestauranteroscuu.github.io/logo.png",
+        "description": "Comunidad de restauranteros y emprendedores del sector alimentos y bebidas en Chihuahua. Directorio interactivo de restaurantes, networking mensual y recursos para negocios de comida.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "C. Pedro Zuloaga #11200, Col. Labor de Terrazas",
+            "addressLocality": "Chihuahua",
+            "addressRegion": "Chihuahua",
+            "postalCode": "31223",
+            "addressCountry": "MX"
+        },
+        "sameAs": [
+            "https://www.instagram.com/canacorestauranteroscuu",
+            "https://www.tiktok.com/@canacorestauranteroscuu",
+            "https://www.facebook.com/canacorestauranteroscuu"
+        ],
+        "parentOrganization": {
+            "@type": "Organization",
+            "name": "CANACO Servytur Chihuahua",
+            "url": "https://www.canacochihuahua.com"
+        }
+    }
+    </script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: 'Inter', sans-serif;
             background: linear-gradient(170deg, #0B1D36 0%, #132F52 50%, #0B1D36 100%);
-            min-height: 100vh;
-            display: flex;
+            min-height: 100vh;            display: flex;
             justify-content: center;
             padding: 40px 20px;
             color: white;
@@ -42,8 +81,7 @@
             font-weight: 800;
             letter-spacing: 1px;
             text-align: center;
-            margin-bottom: 4px;
-        }
+            margin-bottom: 4px;        }
         .subtitle {
             color: #FFC107;
             font-size: 13px;
@@ -75,7 +113,6 @@
         .section-label:first-of-type {
             margin-top: 0;
         }
-
         /* LINK BUTTONS */
         .link {
             display: flex;
@@ -99,95 +136,26 @@
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(0,0,0,0.2);
         }
-        .link .icon {
-            font-size: 22px;
-            width: 32px;
-            text-align: center;
-            flex-shrink: 0;
-        }
-        .link .label {
-            flex: 1;
-        }
-        .link .label small {
-            display: block;
-            color: rgba(255,255,255,0.4);
-            font-size: 12px;
-            font-weight: 500;
-            margin-top: 2px;
-        }
-        .link .arrow {
-            color: rgba(255,255,255,0.25);
-            font-size: 18px;
-        }
-
+        .link .icon { font-size: 22px; width: 32px; text-align: center; flex-shrink: 0; }
+        .link .label { flex: 1; }
+        .link .label small { display: block; color: rgba(255,255,255,0.4); font-size: 12px; font-weight: 500; margin-top: 2px; }
+        .link .arrow { color: rgba(255,255,255,0.25); font-size: 18px; }
         /* FEATURED LINK */
-        .link.featured {
-            background: linear-gradient(135deg, #FFC107, #FFD54F);
-            border: none;
-            color: #0B1D36;
-        }
-        .link.featured .label small {
-            color: rgba(11,29,54,0.5);
-        }
-        .link.featured .arrow {
-            color: rgba(11,29,54,0.3);
-        }
-        .link.featured:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(255,193,7,0.35);
-        }
+        .link.featured { background: linear-gradient(135deg, #FFC107, #FFD54F); border: none; color: #0B1D36; }
+        .link.featured .label small { color: rgba(11,29,54,0.5); }
+        .link.featured .arrow { color: rgba(11,29,54,0.3); }
+        .link.featured:hover { transform: translateY(-2px); box-shadow: 0 8px 25px rgba(255,193,7,0.35); }
 
         /* COLLAB SECTION */
-        .collab-box {
-            width: 100%;
-            padding: 24px;
-            background: rgba(255,193,7,0.08);
-            border: 1px solid rgba(255,193,7,0.15);
-            border-radius: 18px;
-            margin-bottom: 10px;
-            text-align: center;
-        }
-        .collab-box h3 {
-            color: #FFC107;
-            font-size: 16px;
-            font-weight: 800;
-            margin-bottom: 10px;
-        }
-        .collab-box p {
-            color: rgba(255,255,255,0.65);
-            font-size: 14px;
-            line-height: 1.5;
-            margin-bottom: 16px;
-        }
-        .collab-box .tags {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 6px;
-            justify-content: center;
-            margin-bottom: 16px;
-        }
-        .collab-box .tag {
-            background: rgba(255,193,7,0.12);
-            color: #FFC107;
-            font-size: 11px;
-            font-weight: 700;
-            padding: 5px 12px;
-            border-radius: 20px;
-            letter-spacing: 0.5px;
-        }
+        .collab-box { width: 100%; padding: 24px; background: rgba(255,193,7,0.08); border: 1px solid rgba(255,193,7,0.15); border-radius: 18px; margin-bottom: 10px; text-align: center; }
+        .collab-box h3 { color: #FFC107; font-size: 16px; font-weight: 800; margin-bottom: 10px; }
+        .collab-box p { color: rgba(255,255,255,0.65); font-size: 14px; line-height: 1.5; margin-bottom: 16px; }
+        .collab-box .tags { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin-bottom: 16px; }
+        .collab-box .tag { background: rgba(255,193,7,0.12); color: #FFC107; font-size: 11px; font-weight: 700; padding: 5px 12px; border-radius: 20px; letter-spacing: 0.5px; }
 
         /* FOOTER */
-        .footer {
-            margin-top: 35px;
-            text-align: center;
-            color: rgba(255,255,255,0.25);
-            font-size: 12px;
-            line-height: 1.6;
-        }
-        .footer a {
-            color: rgba(255,255,255,0.35);
-            text-decoration: none;
-        }
+        .footer { margin-top: 35px; text-align: center; color: rgba(255,255,255,0.25); font-size: 12px; line-height: 1.6; }
+        .footer a { color: rgba(255,255,255,0.35); text-decoration: none; }
     </style>
 </head>
 <body>
@@ -197,7 +165,6 @@
         <h1 class="title">Sección Especializada de Restaurantes</h1>
         <p class="subtitle">CANACO Chihuahua</p>
         <p class="tagline">La comunidad de restauranteros más activa de Chihuahua</p>
-
         <!-- DIRECTORIO -->
         <div class="section-label">Directorio</div>
         <a class="link featured" href="https://canacorestauranteroscuu.github.io/Restaurantes/dondecomemos.html">
@@ -223,7 +190,6 @@
             <span class="label">Facebook<small>@canacorestauranteroscuu</small></span>
             <span class="arrow">›</span>
         </a>
-
         <!-- ÚNETE -->
         <div class="section-label">Únete</div>
         <a class="link" href="seccion.html">
@@ -249,8 +215,7 @@
                 <span class="tag">Capacitación</span>
                 <span class="tag">Tecnología</span>
                 <span class="tag">Mobiliario</span>
-            </div>
-            <a class="link" href="https://wa.me/526142354312?text=Hola%2C%20me%20interesa%20colaborar%20con%20CANACO%20Restauranteros" style="margin-bottom: 0;">
+            </div>            <a class="link" href="https://wa.me/526142354312?text=Hola%2C%20me%20interesa%20colaborar%20con%20CANACO%20Restauranteros" style="margin-bottom: 0;">
                 <span class="icon">💬</span>
                 <span class="label">Escríbenos por WhatsApp<small>Louie Elizondo, Presidente de la Sección — 614 235 4312</small></span>
                 <span class="arrow">›</span>
