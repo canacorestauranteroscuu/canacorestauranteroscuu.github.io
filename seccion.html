@@ -51,9 +51,9 @@
         .step-content p{color:rgba(255,255,255,0.7);font-size:15px;line-height:1.5}
 
         /* Payment table */
-        .pay-table{width:100%;border-collapse:collapse;margin:12px 0}
-        .pay-table td{padding:10px 14px;border-bottom:1px solid rgba(255,255,255,0.06);font-size:14px}
-        .pay-table td:first-child{color:rgba(255,255,255,0.5);width:40%}
+        .pay-table{width:100%;border-collapse:collapse;margin:12px 0;table-layout:fixed}
+        .pay-table td{padding:10px 14px;border-bottom:1px solid rgba(255,255,255,0.06);font-size:14px;word-wrap:break-word;overflow-wrap:break-word}
+        .pay-table td:first-child{color:rgba(255,255,255,0.5);width:35%}
         .pay-table td:last-child{color:white;font-weight:600}
         .price-tag{display:inline-block;background:linear-gradient(135deg,#FFC107,#FFD54F);color:#0B1D36;padding:6px 18px;border-radius:30px;font-weight:900;font-size:20px;margin:8px 0}
 
@@ -76,8 +76,17 @@
         .cta-btn:hover{text-decoration:none;transform:translateY(-2px);box-shadow:0 8px 30px rgba(255,193,7,0.4)}
 
         /* Contact */
-        .contact-item{display:flex;align-items:center;gap:12px;padding:8px 0;color:rgba(255,255,255,0.7);font-size:15px}
-        .contact-item .icon{font-size:20px;width:28px;text-align:center}
+        .contact-item{display:flex;align-items:flex-start;gap:12px;padding:8px 0;color:rgba(255,255,255,0.7);font-size:15px;overflow-wrap:break-word;word-break:break-word}
+        .contact-item .icon{font-size:20px;width:28px;text-align:center;flex-shrink:0}
+        .contact-item span{min-width:0}
+
+        /* Global overflow fix */
+        .card{overflow:hidden;overflow-wrap:break-word;word-break:break-word}
+        .benefit .text{min-width:0}
+        .step-content{min-width:0;overflow-wrap:break-word}
+        .form-container{overflow:hidden}
+        .form-container iframe{max-width:100%}
+        .price-tag{word-break:normal}
 
         /* Footer */
         .footer{text-align:center;margin-top:40px;padding-top:20px;border-top:1px solid rgba(255,255,255,0.06);color:rgba(255,255,255,0.25);font-size:12px;line-height:1.8}
@@ -148,9 +157,9 @@
             </div>
 
             <div class="form-container">
-                <iframe src="https://canacorestaurantes.notion.site/2f03b368f4968114b3c9d45cdd187877" loading="lazy"></iframe>
+                <iframe src="https://naturalbalanceclub.notion.site/ebd/2f03b368f4968114b3c9d45cdd187877" width="100%" height="1200" frameborder="0" allowfullscreen loading="lazy"></iframe>
             </div>
-            <p class="form-fallback">Si no carga el formulario, <a href="https://canacorestaurantes.notion.site/2f03b368f4968114b3c9d45cdd187877" target="_blank">ábrelo aquí →</a></p>
+            <p class="form-fallback">Si no carga el formulario, <a href="https://naturalbalanceclub.notion.site/ebd/2f03b368f4968114b3c9d45cdd187877" target="_blank">ábrelo aquí →</a></p>
 
             <div class="step">
                 <div class="step-num">3</div>

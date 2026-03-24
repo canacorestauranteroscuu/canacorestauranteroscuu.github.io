@@ -51,14 +51,22 @@
         .plan-features li::before{content:'✓';color:#FFC107;font-weight:800;flex-shrink:0}
 
         /* Payment */
-        .pay-table{width:100%;border-collapse:collapse;margin:12px 0}
-        .pay-table td{padding:10px 14px;border-bottom:1px solid rgba(255,255,255,0.06);font-size:14px}
-        .pay-table td:first-child{color:rgba(255,255,255,0.5);width:40%}
+        .pay-table{width:100%;border-collapse:collapse;margin:12px 0;table-layout:fixed}
+        .pay-table td{padding:10px 14px;border-bottom:1px solid rgba(255,255,255,0.06);font-size:14px;word-wrap:break-word;overflow-wrap:break-word}
+        .pay-table td:first-child{color:rgba(255,255,255,0.5);width:35%}
         .pay-table td:last-child{color:white;font-weight:600}
 
-        .contact-item{display:flex;align-items:flex-start;gap:12px;padding:8px 0;color:rgba(255,255,255,0.7);font-size:15px;line-height:1.5}
+        .contact-item{display:flex;align-items:flex-start;gap:12px;padding:8px 0;color:rgba(255,255,255,0.7);font-size:15px;line-height:1.5;overflow-wrap:break-word;word-break:break-word}
         .contact-item .icon{font-size:20px;width:28px;text-align:center;flex-shrink:0;margin-top:2px}
+        .contact-item span{min-width:0}
         .contact-item strong{color:white}
+
+        /* Global overflow fix */
+        .card{overflow:hidden;overflow-wrap:break-word;word-break:break-word}
+        .plan{overflow:hidden;overflow-wrap:break-word}
+        .plan-features li{overflow-wrap:break-word;word-break:break-word}
+        .req{overflow-wrap:break-word;word-break:break-word}
+        .req .icon{flex-shrink:0}
 
         .cta-btn{display:block;background:linear-gradient(135deg,#FFC107,#FFD54F);color:#0B1D36;padding:18px 40px;border-radius:60px;font-weight:900;font-size:18px;letter-spacing:1px;text-transform:uppercase;text-align:center;text-decoration:none;box-shadow:0 6px 25px rgba(255,193,7,0.3);margin:30px auto;max-width:420px}
         .cta-btn:hover{text-decoration:none;transform:translateY(-2px)}
