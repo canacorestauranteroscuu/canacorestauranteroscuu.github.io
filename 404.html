@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirigiendo — sercanaco.com</title>
+  <link rel="canonical" href="https://sercanaco.com/">
+  <script>
+    (function () {
+      var map = {
+        '/Restaurantes': 'https://sercanaco.com/',
+        '/Restaurantes/': 'https://sercanaco.com/',
+        '/Restaurantes/index.html': 'https://sercanaco.com/',
+        '/Restaurantes/dondecomemos.html': 'https://sercanaco.com/restaurantes/',
+        '/': 'https://sercanaco.com/',
+        '/index.html': 'https://sercanaco.com/',
+        '/links.html': 'https://sercanaco.com/',
+        '/dondecomemos.html': 'https://sercanaco.com/restaurantes/',
+        '/seccion.html': 'https://sercanaco.com/restauranteros/',
+        '/afiliate.html': 'https://sercanaco.com/restauranteros/unete/',
+        '/restaurantes': 'https://sercanaco.com/restaurantes/',
+        '/restaurantes/': 'https://sercanaco.com/restaurantes/',
+        '/restauranteros': 'https://sercanaco.com/restauranteros/',
+        '/restauranteros/': 'https://sercanaco.com/restauranteros/',
+        '/restauranteros/unete': 'https://sercanaco.com/restauranteros/unete/',
+        '/restauranteros/unete/': 'https://sercanaco.com/restauranteros/unete/',
+        '/restauranteros/contacto': 'https://sercanaco.com/restauranteros/contacto/',
+        '/restauranteros/contacto/': 'https://sercanaco.com/restauranteros/contacto/',
+        '/restauranteros/preguntas': 'https://sercanaco.com/restauranteros/preguntas/',
+        '/restauranteros/preguntas/': 'https://sercanaco.com/restauranteros/preguntas/',
+        '/restauranteros/renovar': 'https://sercanaco.com/restauranteros/renovar/',
+        '/restauranteros/renovar/': 'https://sercanaco.com/restauranteros/renovar/',
+        '/aviso-de-privacidad': 'https://sercanaco.com/aviso-de-privacidad/',
+        '/aviso-de-privacidad/': 'https://sercanaco.com/aviso-de-privacidad/',
+        '/terminos': 'https://sercanaco.com/terminos/',
+        '/terminos/': 'https://sercanaco.com/terminos/',
+      };
+      var path = location.pathname.replace(/\/$/, '') || '/';
+      var base = map[path] || map[path + '.html'] || map[location.pathname] || 'https://sercanaco.com/';
+      var dest = base + location.search + location.hash;
+      var meta = document.createElement('meta');
+      meta.httpEquiv = 'refresh';
+      meta.content = '0; url=' + dest;
+      document.head.appendChild(meta);
+      var canonical = document.querySelector('link[rel="canonical"]');
+      if (canonical) canonical.href = base;
+      location.replace(dest);
+    })();
+  </script>
+</head>
+<body>
+  <p>Si no te redirigimos automáticamente, abre <a href="https://sercanaco.com/">sercanaco.com</a>.</p>
+</body>
+</html>
